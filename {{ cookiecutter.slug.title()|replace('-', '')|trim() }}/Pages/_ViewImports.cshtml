@@ -1,0 +1,6 @@
+﻿@using {{ cookiecutter.slug.title()|replace('-', '')|trim() }}
+@namespace {{ cookiecutter.slug.title()|replace('-', '')|trim() }}.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+{%- if cookiecutter.frontend_pipeline == 'Vite' %}
+@addTagHelper *, Vite.AspNetCore
+{%- endif %}
