@@ -1,3 +1,0 @@
-<Solution>
-  <Project Path="{{ cookiecutter.slug.title()|replace('-', '')|trim() }}.csproj" />
-</Solution>

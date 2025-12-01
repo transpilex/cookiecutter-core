@@ -1,6 +1,6 @@
 {
   "name": "My Awesome Project",
-  "slug": "{{ cookiecutter.name.lower()|replace(' ', '-')|replace('.', '-')|trim() }}",
+  "slug": "{{ cookiecutter.name.title()|replace('-', '')|trim() }}",
   "description": "",
   "version": "1.0.0",
   "ui_library": [
@@ -15,9 +15,9 @@
   ],
   "has_plugins_config": "n",
   "_copy_without_render": [
-    "{{ cookiecutter.slug.title()|replace('-', '')|trim() }}/Assets",
-    "{{ cookiecutter.slug.title()|replace('-', '')|trim() }}/Pages/Shared",
-    "{{ cookiecutter.slug.title()|replace('-', '')|trim() }}/Properties",
-    "{{ cookiecutter.slug.title()|replace('-', '')|trim() }}/wwwroot"
+    "{{ cookiecutter.slug }}/Assets",
+    "{{ cookiecutter.slug }}/Pages/Shared",
+    "{{ cookiecutter.slug }}/Properties",
+    "{{ cookiecutter.slug }}/wwwroot"
   ]
 }
