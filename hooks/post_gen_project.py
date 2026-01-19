@@ -92,9 +92,7 @@ def handle_js_runner(frontend_pipeline, ui_library):
         else:
             scripts = {
                 "dev": "gulp",
-                "build": "gulp build",
-                "rtl": "gulp rtl",
-                "rtl-build": "gulp rtlBuild",
+                "build": "gulp build"
             }
             remove_dev_deps = [
                 "@tailwindcss/postcss",
